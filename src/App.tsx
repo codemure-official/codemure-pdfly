@@ -90,7 +90,7 @@ function App() {
       <a className="brand" href="#top" aria-label="PDFly home"><img src={theme === 'dark' ? '/pdfly-white-text.svg' : '/pdfly-black-text.svg'} alt="PDFly" /></a>
       <nav className={mobileOpen ? 'nav-links open' : 'nav-links'} aria-label="Main navigation">
         <button onClick={() => { setAboutOpen(true); setMobileOpen(false) }}>About</button>
-        <a href="https://www.codemure.com" target="_blank" rel="noreferrer">Back to tools <span>↗</span></a>
+        <a href="https://www.codemure.com/tools" target="_blank" rel="noreferrer">Back to tools <span>↗</span></a>
         <a className="parent-logo" href="https://www.codemure.com" target="_blank" rel="noreferrer"><img src={theme === 'dark' ? '/codemure-parent-logo-white-text.svg' : '/codemure-parent-logo-black-text.svg'} alt="Codemure" /></a>
       </nav>
       <div className="nav-actions"><button className="theme-toggle" onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')} aria-label="Toggle color theme"><span>{theme === 'light' ? '☾' : '☀'}</span><b>{theme === 'light' ? 'Dark' : 'Light'}</b></button><button className="menu-button" onClick={() => setMobileOpen(!mobileOpen)} aria-label="Open menu"><i></i><i></i><i></i></button></div>
